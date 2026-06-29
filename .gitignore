@@ -1,0 +1,35 @@
+# Build directories
+bwe_core/target/
+bwe_ui/.dart_tool/
+bwe_ui/build/
+bwe_ui/.idea/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Flutter
+pubspec.lock
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Rust
+Cargo.lock
+*.pdb
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log

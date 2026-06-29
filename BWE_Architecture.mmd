@@ -1,0 +1,48 @@
+graph TD
+    subgraph UI Layer
+        FlutterUI[Flutter UI]
+    end
+    subgraph FFI Bridge
+        DartFFI[Dart FFI]
+        RustFFI[Rust FFI]
+    end
+    subgraph Core Engine (Rust)
+        Arithmetic[Modular Arithmetic Engine]
+        DocGraph[Document Graph Model]
+        Signature[Signature Engine]
+        Storage[Boundless Vault Storage]
+        Parser[File Parser]
+        Optimizer[Self-Optimization Loop]
+    end
+    FlutterUI --> DartFFI
+    DartFFI --> RustFFI
+    RustFFI --> Arithmetic
+    RustFFI --> DocGraph
+    RustFFI --> Signature
+    RustFFI --> Storage
+    RustFFI --> Parser
+    RustFFI --> Optimizer
+    DocGraph <--> Arithmetic
+    DocGraph <--> Parser
+    DocGraph <--> Signature
+    DocGraph <--> Storage
+    Signature <--> Storage
+    Optimizer <--> DocGraph
+    Optimizer <--> Storage
+    Storage <--> Arithmetic
+    Storage <--> Parser
+    Storage <--> Signature
+    Storage <--> DocGraph
+    Storage <--> Optimizer
+    Parser <--> Arithmetic
+    Parser <--> DocGraph
+    Parser <--> Storage
+    Parser <--> Signature
+    Parser <--> Optimizer
+    Signature <--> Arithmetic
+    Optimizer <--> Arithmetic
+    FlutterUI <--> Storage
+    FlutterUI <--> DocGraph
+    FlutterUI <--> Signature
+    FlutterUI <--> Parser
+    FlutterUI <--> Optimizer
