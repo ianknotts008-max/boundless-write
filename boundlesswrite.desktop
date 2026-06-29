@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BoundlessWrite
+GenericName=Word Processor
+Comment=Professional open-source word processor similar to Google Docs and Microsoft Word
+Exec=/media/boundless-ai-dev/onn. Drive/WordProcessor/RUN_BOUNDLESSWRITE.sh linux
+Icon=/media/boundless-ai-dev/onn. Drive/WordProcessor/bwe_ui/assets/icons/icon-512.png
+Categories=Office;WordProcessor;
+Terminal=false
+StartupNotify=true
+Keywords=word;processor;document;writing;editor;
+X-GNOME-Gettext-Domain=boundlesswrite
